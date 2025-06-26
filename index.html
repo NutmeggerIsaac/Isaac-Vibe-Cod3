@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Projects - A Curated Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My World</h1>
+        <p>A collection of my writings and things that bring me joy.</p>
+    </header>
+
+    <main>
+        <section id="my-writings">
+            <h2>My Writings</h2>
+            <ul>
+                <li><a href="link-to-article-1.html">Article Title 1: An Exploration of [Topic]</a></li>
+                <li><a href="link-to-article-2.html">Article Title 2: Reflections on [Another Topic]</a></li>
+                <li><a href="link-to-article-3.html">Article Title 3: The Beauty of [Third Topic]</a></li>
+                </ul>
+        </section>
+
+        <section id="things-i-like">
+            <h2>Things I Like</h2>
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="your-duck-image.jpg" alt="A beautifully designed duck">
+                    <p>Ducks</p>
+                </div>
+                <div class="image-item">
+                    <img src="your-sheep-image.jpg" alt="A beautifully designed sheep">
+                    <p>Sheep</p>
+                </div>
+                <div class="image-item">
+                    <img src="your-lighthouse-image.jpg" alt="A beautifully designed lighthouse">
+                    <p>Lighthouses</p>
+                </div>
+                <div class="image-item">
+                    <img src="your-train-image.jpg" alt="A beautifully designed train">
+                    <p>Trains</p>
+                </div>
+                <div class="image-item">
+                    <img src="your-garden-image.jpg" alt="A beautifully designed garden">
+                    <p>Gardens</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="video-section">
+            <h2>A Moment of Reflection</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p>This video features an orchestral performance of Rachmaninoff's Piano Concerto No. 2 [00:00:00]. The performance showcases the individual talents of various musicians [01:00:99], as well as the collective harmony of the orchestra [02:18:23].</p>
+        </section>
+
+        <section id="duck-waddle-section">
+            <h2>Feeling Playful?</h2>
+            <button id="waddleButton">Make a Duck Waddle!</button>
+            <img id="waddlingDuck" src="https://www.pngall.com/wp-content/uploads/2016/07/Duck-PNG-Image.png" alt="Waddling Duck" style="display: none; position: absolute; left: 0; top: 0; height: 100px;">
+        </section>
+
+        <section id="comments">
+            <h2>Leave a Comment</h2>
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                 * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                 * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://YOUR_DISQUS_SHORTNAME.disqus.com/embed.js'; // REPLACE 'YOUR_DISQUS_SHORTNAME' with your actual Disqus shortname!
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Personal Projects. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+body {
+    font-family: 'Lora', serif; /* A classic, inviting font */
+    margin: 0;
+    padding: 0;
+    background-color: #F8F4E3; /* Light, warm background */
+    color: #3E2723; /* Dark brown for text */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #8B4513; /* Earthy brown */
+    color: #F8F4E3;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid #556B2F; /* Olive green accent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif; /* More decorative font for headings */
+    color: #556B2F; /* Olive green for headings */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2.2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #D2B48C; /* Tan accent */
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #E0E0D0; /* Light border */
+    border-radius: 8px;
+    background-color: #FFFDF5; /* Slightly off-white for sections */
+}
+
+/* My Writings Section */
+#my-writings ul {
+    list-style: none;
+    padding: 0;
+}
+
+#my-writings li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+#my-writings li::before {
+    content: '🌿'; /* Plant-inspired bullet point */
+    position: absolute;
+    left: 0;
+    color: #556B2F;
+    font-size: 1.2em;
+    top: 0;
+}
+
+#my-writings a {
+    color: #8B4513; /* Earthy brown for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#my-writings a:hover {
+    color: #A0522D; /* Slightly darker brown on hover */
+    text-decoration: underline;
+}
+
+/* Things I Like Section - Image Gallery */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-item {
+    background-color: #FDF5E6; /* Creamy background for image items */
+    border: 1px solid #D2B48C; /* Tan border */
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.image-item img {
+    width: 100%;
+    height: 150px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    border-bottom: 1px solid #D2B48C;
+}
+
+.image-item p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #556B2F;
+}
+
+/* Video Section */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Duck Waddle Section */
+#duck-waddle-section {
+    text-align: center;
+    position: relative; /* Needed for absolute positioning of duck */
+    overflow: hidden; /* Hide duck when outside section */
+    min-height: 150px; /* Ensure enough space for duck */
+}
+
+#waddleButton {
+    background-color: #A0522D; /* Sienna */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-family: 'Playfair Display', serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#waddleButton:hover {
+    background-color: #8B4513; /* Darker brown */
+    transform: translateY(-2px);
+}
+
+/* Comments Section */
+#comments {
+    margin-top: 50px;
+}
+
+/* Footer */
+footer {
+    background-color: #8B4513;
+    color: #F8F4E3;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 5px solid #556B2F;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+    .image-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    section {
+        padding: 10px;
+    }
+    .image-gallery {
+        grid-template-columns: 1fr; /* Stack images on small screens */
+    }
+}
